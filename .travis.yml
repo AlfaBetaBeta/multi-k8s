@@ -23,4 +23,4 @@ deploy:
   provider: script
   script: bash ./deploy.sh
   en:
-    branch: master
+    branch: main
