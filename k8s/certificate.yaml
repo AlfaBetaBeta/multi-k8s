@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: k8s-alfa2beta-co-uk-tls
+spec:
+  secretName: k8s-alfa2beta-co-uk
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: k8s-alfa2beta.co.uk
+  dnsNames:
+    - k8s-alfa2beta.co.uk
+    - www.k8s-alfa2beta.co.uk
